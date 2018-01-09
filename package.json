@@ -6,7 +6,9 @@
   "dependencies": {
     "express-oauth-server": "2.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "npm-run-all": "4.1.1"
+  },
   "scripts": {
     "test": "test"
   },
