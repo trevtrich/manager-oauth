@@ -7,10 +7,15 @@
     "express-oauth-server": "2.0.0"
   },
   "devDependencies": {
+    "eslint": "4.9.0",
+    "mocha": "4.0.1",
     "npm-run-all": "4.1.1"
   },
   "scripts": {
-    "test": "test"
+    "lint": "eslint . --cache",
+    "lint:fix": "eslint --fix . --cache",
+    "tests:unit": "mocha --recursive test/unit",
+    "test": "run-s lint:* tests:*"
   },
   "repository": {
     "type": "git",
