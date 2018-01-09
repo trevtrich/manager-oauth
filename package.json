@@ -1,0 +1,23 @@
+{
+  "name": "manager-oauth",
+  "version": "0.0.0",
+  "description": "The oauth server for the Manager app",
+  "main": "index.js",
+  "dependencies": {
+    "express-oauth-server": "2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardson-trevor/manager-oauth.git"
+  },
+  "author": "Trevor Richardson <tr@trevorrichardson.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardson-trevor/manager-oauth/issues"
+  },
+  "homepage": "https://github.com/richardson-trevor/manager-oauth#readme"
+}
