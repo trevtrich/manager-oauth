@@ -8,12 +8,8 @@ app.oauth = new OAuthServer({
   model: {}
 });
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(app.oauth.authorize());
+app.use(bodyParser.urlencoded({extended: true}));
 
-app.use((req, res) => {
-  res.send('Secret area');
+app.listen(3000, () => {
+  console.log(`listening on port ${port}`);
 });
-
-app.listen(3000);
