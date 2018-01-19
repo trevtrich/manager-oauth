@@ -1,7 +1,7 @@
 import bodyParser from 'body-parser';
 import express from 'express';
 import OAuthServer from 'express-oauth-server';
-import oAuth2Server from 'node-oauth2-server';
+import oAuth2Server from 'oauth2-server';
 import registerUser from './authorization/auth-routes-methods';
 
 const app = express();
