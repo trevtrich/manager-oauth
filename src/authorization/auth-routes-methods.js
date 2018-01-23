@@ -14,15 +14,14 @@ function sendResponse(res, message, error) {
 }
 
 export default function registerUser(req, res){
-  const username = req.body.username
-  const password = req.body.password
+  const {username, password} = req.body;
 
   if (!isString(username) || !isString(password)) { return sendResponse(res, "Invalid Credentials", true); }
 
   if (users.includes(username)) {
     throw new Error('User already exists')
   } else {
-    users.push(username);
+    users.push(req.body);
     sendResponse(res, "Registration was successful", null);
   }
 }
